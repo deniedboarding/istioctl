@@ -1,13 +1,6 @@
 #! /bin/sh
 OS="$(uname)"
-if [ "x${OS}" = "xDarwin" ] ; then
-  OSEXT="osx"
-else
-  # TODO we should check more/complain if not likely to work, etc...
-  OSEXT="linux"
-fi
-
-ISTIO_VERSION="1.1.1"
+OSEXT="linux"
 
 NAME="istio-$ISTIO_VERSION"
 

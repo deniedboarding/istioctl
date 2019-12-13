@@ -1,6 +1,6 @@
 FROM alpine
 
-LABEL maintainer="Shunsuke Miyoshi <s.miyoshi1991@gmail.com>"
+LABEL maintainer="Mårten Svantesson <marten.svantesson@ticket.se>"
 
 # Install kubectl
 RUN apk add --update ca-certificates \

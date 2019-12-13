@@ -1,5 +1,6 @@
 APP_NAME=istioctl
-APP_VERSION=1.1.1
+APP_VERSION=1.4.2
+export ISTIO_VERSION=$(APP_VERSION)
 
 all: build
 
