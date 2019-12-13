@@ -3,10 +3,10 @@ pipeline {
     label "jenkins-maven"
   }
   environment {
-    ORG = 'sh-miyoshi'
+    ORG = 'deniedboarding'
     APP_NAME = 'istioctl'
     CHARTMUSEUM_CREDS = credentials('jenkins-x-chartmuseum')
-    DOCKER_REGISTRY_ORG = 'sh-miyoshi'
+    DOCKER_REGISTRY_ORG = 'deniedboarding'
   }
   stages {
     stage('CI Build and push snapshot') {
