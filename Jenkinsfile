@@ -17,9 +17,11 @@ pipeline {
 
           // ensure we're not on a detached head
           sh "git checkout master"
-          sh "export VERSION=1.4.2"
-          sh "./downloadIstio.sh"
-          sh "skaffold build -f skaffold.yaml"
+          sh '''
+              export VERSION=1.4.2
+              ./downloadIstio.sh
+              skaffold build -f skaffold.yaml
+          '''
         }
       }
     }
