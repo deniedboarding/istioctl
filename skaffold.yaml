@@ -2,7 +2,7 @@ apiVersion: skaffold/v1beta11
 kind: Config
 build:
   artifacts:
-  - image: sh-miyoshi/istioctl
+  - image: deniedboarding/istioctl
     context: .
     docker:
       network: host

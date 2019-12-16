@@ -17,6 +17,8 @@ pipeline {
 
           // ensure we're not on a detached head
           sh "git checkout master"
+          sh "git config --global credential.helper store"
+          sh "jx step git credentials"                    
           sh '''
               export VERSION=1.4.2
               ./downloadIstio.sh
