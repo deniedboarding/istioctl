@@ -20,7 +20,7 @@ pipeline {
           sh "git config --global credential.helper store"
           sh "jx step git credentials"                    
           sh '''
-              export VERSION=1.4.2
+              export VERSION=1.8.1
               ./downloadIstio.sh
               skaffold build -f skaffold.yaml
           '''
