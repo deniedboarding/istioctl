@@ -11,4 +11,4 @@ istioctl manifest apply -f values.yaml
 
 ## Image
 
-674851156463.dkr.ecr.eu-central-1.amazonaws.com/deniedboarding/istioctl:1.4.2
+674851156463.dkr.ecr.eu-north-1.amazonaws.com/deniedboarding/istioctl:1.8.2
